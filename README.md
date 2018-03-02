@@ -61,3 +61,11 @@ Then when I pressed `Ctrl-F5` I was treated to this:
 
 ![usage .... netget <url>](READMEImages/usage.png "usage .... netget <url>")
 
+Almost there! To get `args[0]` populated I had to change the debug config in `.vscode/launch.json` to add to the `args[]`.
+
+![added http://rhildred.github.io](READMEImages/launch.json.png "added http://rhildred.github.io")
+
+Finally when I pressed `Ctrl-F5` I was treated with:
+
+![the end of the html for my home page](READMEImages/HtmlSuccess.png "the end of the html for my home page")
+
