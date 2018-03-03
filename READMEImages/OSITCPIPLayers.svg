@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="800" height="950" viewBox="0, 0, 800, 950">
+  <g id="Layer_1">
+    <path d="M517.5,45.5 L733.5,45.5 L733.5,165.5 L517.5,165.5 L517.5,45.5 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M517.5,428 L733.5,428 L733.5,548 L517.5,548 L517.5,428 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M517.5,553 L733.5,553 L733.5,673 L517.5,673 L517.5,553 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M517.5,680 L733.5,680 L733.5,800 L517.5,800 L517.5,680 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <text transform="matrix(1, 0, 0, 1, 539, 306)"/>
+  </g>
+  <g id="Layer_2">
+    <text transform="matrix(1, 0, 0, 1, 592.13, 97)">
+      <tspan x="-58.13" y="-7.5" font-family="Chalkboard" font-size="24" fill="#000000">Application</tspan>
+      <tspan x="-58.13" y="23.5" font-family="Chalkboard" font-size="24" fill="#000000">		Layer</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 592.13, 470)">
+      <tspan x="-58.099" y="-7.5" font-family="Chalkboard" font-size="24" fill="#000000">Transport</tspan>
+      <tspan x="-58.099" y="23.5" font-family="Chalkboard" font-size="24" fill="#000000">		Layer</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 592.13, 596)">
+      <tspan x="-58.099" y="-7.5" font-family="Chalkboard" font-size="24" fill="#000000">Network</tspan>
+      <tspan x="-58.099" y="23.5" font-family="Chalkboard" font-size="24" fill="#000000">		Layer</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 592.13, 715.5)">
+      <tspan x="-56.367" y="8" font-family="Chalkboard" font-size="24" fill="#000000">Link Layer</tspan>
+    </text>
+  </g>
+  <g id="Layer_3">
+    <path d="M67.5,45.5 L283.5,45.5 L283.5,165.5 L67.5,165.5 L67.5,45.5 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M67.5,174.5 L283.5,174.5 L283.5,294.5 L67.5,294.5 L67.5,174.5 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M67.5,428 L283.5,428 L283.5,548 L67.5,548 L67.5,428 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M67.5,553 L283.5,553 L283.5,673 L67.5,673 L67.5,553 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M67.5,680 L283.5,680 L283.5,800 L67.5,800 L67.5,680 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M67.5,806.5 L283.5,806.5 L283.5,926.5 L67.5,926.5 L67.5,806.5 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M67.5,300.5 L283.5,300.5 L283.5,420.5 L67.5,420.5 L67.5,300.5 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+  </g>
+  <g id="Layer_4">
+    <text transform="matrix(1, 0, 0, 1, 142.87, 97)">
+      <tspan x="-58.13" y="-7.5" font-family="Chalkboard" font-size="24" fill="#000000">Application</tspan>
+      <tspan x="-58.13" y="23.5" font-family="Chalkboard" font-size="24" fill="#000000">		Layer</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 142.87, 470)">
+      <tspan x="-58.099" y="-7.5" font-family="Chalkboard" font-size="24" fill="#000000">Transport</tspan>
+      <tspan x="-58.099" y="23.5" font-family="Chalkboard" font-size="24" fill="#000000">		Layer</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 142.87, 596)">
+      <tspan x="-58.099" y="-7.5" font-family="Chalkboard" font-size="24" fill="#000000">Network</tspan>
+      <tspan x="-58.099" y="23.5" font-family="Chalkboard" font-size="24" fill="#000000">		Layer</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 142.87, 715.5)">
+      <tspan x="-56.367" y="8" font-family="Chalkboard" font-size="24" fill="#000000">Link Layer</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 142.87, 866)">
+      <tspan x="-58.099" y="-7.5" font-family="Chalkboard" font-size="24" fill="#000000">Physical</tspan>
+      <tspan x="-58.099" y="23.5" font-family="Chalkboard" font-size="24" fill="#000000">		Layer</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 152.973, 223)">
+      <tspan x="-66.471" y="-7.5" font-family="Chalkboard" font-size="24" fill="#000000">Presentation</tspan>
+      <tspan x="-66.471" y="23.5" font-family="Chalkboard" font-size="24" fill="#000000">		Layer</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 142.87, 346)">
+      <tspan x="-58.099" y="-7.5" font-family="Chalkboard" font-size="24" fill="#000000">Session</tspan>
+      <tspan x="-58.099" y="23.5" font-family="Chalkboard" font-size="24" fill="#000000">		Layer</tspan>
+    </text>
+  </g>
+</svg>

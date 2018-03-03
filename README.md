@@ -143,4 +143,52 @@ Address: 151.101.125.147
 
 Then the WebClient opens a socket to `151.101.125.147:80`.
 
-### Transport Layer 
+### Transport Layer
+
+![socket in a telephone exchange](READMEImages/TexasRichardson_telephoneExchangeOperator.jpg "socket in a telephone exchange")
+
+The word socket predates networking. We plug something in to a socket to complete a circuit. The transport layer creates a circuit between 2 applications. In this case our WebClient app and the web server at http://rhildred.github.io.
+
+### Network Layer
+
+TCP/IP started as a military project with 3 goals:
+
+* Survive a nuclear strike
+* Permit different computer systems from different Nato allies to communicate easily
+* Interconnect systems even into space
+
+The network layer realizes these goals by routing packets individually, potentially around smoking holes. The French had little gourmet packets in their ATM networks while even packets are bigger in Texas. The network layer can fragment packets to work with different systems. Finally the network layer is responsible for addressing nodes for communication. With the new IPV6 network layer 128 bit addresses we can have 340 trillion, trillion trillion addresses. Even with IPV4 networks 32 bit addresses we can have 4.3 billion nodes. 
+
+![5.5 billion cellphones](READMEImages/IPV4AddressSpace.png "5.5 billion cellphones")
+
+With name address translation (NAT) we have been able to make many more private IP addresses be behind many fewer public IP addresses so that our hit applications can run on the worlds 5.5 billion cellphones.
+
+### Link Layer
+
+![signal transmission](READMEImages/tin-cans.jpg "signal transmission")
+
+The link layer is responsible for the physical transmission of the signal. Link layer mediums in common use are twisted pair cables, coaxial cables, fiber and the radio spectrum. Like our tin can telphone example where the medium is a taut string some media can only send one signal at a time. Senders and receivers must take turns. The link layer mediates turn taking in what we call a half duplex mode. Other media like twisted pair has one pair of wires for transmission and 1 pair for receiving. In this full duplex case the sender and receiver can work simultaneously. There is also a mode of using mostly radio spectrum called simplex. This is the case that we are used to from car radios and network television.
+
+## OSI Model
+
+TCP/IP was developed as a defence project in the 1960s to: 
+
+* Survive a nuclear strike
+* Permit different computer systems from different Nato allies to communicate easily
+* Interconnect systems even into space
+
+![OSI model adds 3 theoretical layers](READMEImages/OSITCPIPLayers.png "OSI model adds 3 theoretical layers")
+
+The OSI model was developed later as a theoretical model. One can think of the OSI model as adding 3 layers to TCP/IP. 
+
+### Physical Layer
+
+TCP/IPs Link layer was effectively split in 2 in the OSI model. The OSI model recognized that things like turn taking could be done in the same way in different physical media.
+
+### Session Layer
+
+The session layer was put in between the application and the transport layer. Session layer is important to programmers as a way to think about peer to peer communications as opposed to client server. In peer to peer communications like voice over ip or torrenting a machine on the internet is used to set up a socket between 2 other machines potentially behind a NAT. In Session Initialization Protocol (SIP) and WebRTC Session Traversal Utilities for NAT (STUN) are used on a machine on the internet to punch a hole into the NAT that a socket can be connected through.
+
+### Presentation Layer
+
+The presentation layer was important in the 80s when file servers and print servers were the killer applications for Networking. The presentation layer can be thought of as what makes our g: drives appear as a local drive on every computer that we log on to at school. 
