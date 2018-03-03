@@ -191,4 +191,25 @@ The session layer was put in between the application and the transport layer. Se
 
 ### Presentation Layer
 
-The presentation layer was important in the 80s when file servers and print servers were the killer applications for Networking. The presentation layer can be thought of as what makes our g: drives appear as a local drive on every computer that we log on to at school. 
+The presentation layer was important in the 80s when file servers and print servers were the killer applications for Networking. The presentation layer can be thought of as what makes our g: drives appear as a local drive on every computer that we log on to at school.
+
+## How Do Computers Find Each Other on Networks
+
+To be able to find another computer on a network a computer first needs an address of it own on the local area network segment that it is part of. If you have noticed this on your screen when you are connecting to wifi at Tim's:
+
+![obtaining ip address](READMEImages/ObtainingIP.png "obtaining ip address") 
+
+you have been a witness to your computer getting an address from Dynamic Host Configuration Protocol (DHCP).
+
+Before DHCP existed to get an ipaddress at Tim's you would need to type:
+
+1. The IP address in from a coaster. 
+2. You would also need to supply the ip address of a gateway to get out on the internet.
+3. The netmask to identify whether a computer is on the same segment as us.
+4. DNS servers for looking up ip addresses from hostnames like https://rhildred.github.io 
+
+You did type all of this information for assignment 2.
+
+![instead of dhcp](READMEImages/ManualIPAddress.png "instead of dhcp")
+
+Clicking `Obtain IP Address Automatically` meant that we used DHCP. If that is off all of the information on this screen must be entered by hand. Too cumbersome and prone to error for a coffee shop.
