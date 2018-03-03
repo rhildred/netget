@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="800" height="600" viewBox="0, 0, 800, 600">
+  <g id="Layer_1">
+    <path d="M517.5,51 L733.5,51 L733.5,171 L517.5,171 L517.5,51 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M517.5,178 L733.5,178 L733.5,298 L517.5,298 L517.5,178 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M517.5,303 L733.5,303 L733.5,423 L517.5,423 L517.5,303 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M517.5,430 L733.5,430 L733.5,550 L517.5,550 L517.5,430 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <text transform="matrix(1, 0, 0, 1, 539, 56)"/>
+  </g>
+  <g id="Layer_2">
+    <text transform="matrix(1, 0, 0, 1, 592.13, 95)">
+      <tspan x="-58.13" y="-7.5" font-family="Chalkboard" font-size="24" fill="#000000">Application</tspan>
+      <tspan x="-58.13" y="23.5" font-family="Chalkboard" font-size="24" fill="#000000">		Layer</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 592.13, 220)">
+      <tspan x="-58.099" y="-7.5" font-family="Chalkboard" font-size="24" fill="#000000">Transport</tspan>
+      <tspan x="-58.099" y="23.5" font-family="Chalkboard" font-size="24" fill="#000000">		Layer</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 592.13, 348)">
+      <tspan x="-58.099" y="-7.5" font-family="Chalkboard" font-size="24" fill="#000000">Network</tspan>
+      <tspan x="-58.099" y="23.5" font-family="Chalkboard" font-size="24" fill="#000000">		Layer</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 592.13, 465.5)">
+      <tspan x="-56.367" y="8" font-family="Chalkboard" font-size="24" fill="#000000">Link Layer</tspan>
+    </text>
+    <path d="M23.5,454 L493.5,454 L493.5,512.5 L23.5,512.5 L23.5,454 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M50.5,454 L50.5,512.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M469.5,454 L469.5,512.5" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M50.5,333.75 L469.5,333.75 L469.5,392.25 L50.5,392.25 L50.5,333.75 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M74.5,207.75 L469.5,207.75 L469.5,266.25 L74.5,266.25 L74.5,207.75 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M100.5,81.75 L469.5,81.75 L469.5,140.25 L100.5,140.25 L100.5,81.75 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M74.5,392.25 L74.5,333.75" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M100.5,266.25 L100.5,207.75" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <text transform="matrix(1, 0, 0, 1, 258, 110.5)">
+      <tspan x="-136.986" y="7.5" font-family="Chalkboard" font-size="24" fill="#000000">GET / HTTP/1.0</tspan>
+    </text>
+  </g>
+  <g id="Layer_3">
+    <text transform="matrix(1, 0, 0, 1, 213.055, 362.5)">
+      <tspan x="-126.565" y="8" font-family="Chalkboard" font-size="24" fill="#000000">IP Data (segment) </tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 170.814, 482.75)">
+      <tspan x="-107.814" y="8" font-family="Chalkboard" font-size="24" fill="#000000">Frame Data (packet)</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 213.055, 235.5)">
+      <tspan x="-101.344" y="8" font-family="Chalkboard" font-size="24" fill="#000000">TCP Data (request)</tspan>
+    </text>
+  </g>
+</svg>
