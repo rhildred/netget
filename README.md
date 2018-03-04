@@ -335,7 +335,11 @@ Trace complete.
 
 ``` 
 
-We have reached our destination through 24 hops. Each hop is another gateway to another network segment. I need to say more about routing here, perhaps making a better picture like slide 37 in Topic 06.
+We have reached our destination through 24 hops. Each hop is another gateway to another network segment. 
+
+## Routing Tables
+
+![IGP and BGP Routers](READMEImages/BGP.png "IGP and BGP Routers")
 
 All routers have routing tables made of networks and the gateways to reach them. Different routers create those routing tables in different ways. There are 3 basic ways:
 
