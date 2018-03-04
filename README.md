@@ -77,7 +77,9 @@ Have you seen a picture that looks like this before?
 
 ![dotnet layers](READMEImages/dotnetlayers.png "dotnet layers")
 
-Because my application is written to the .net core layer it will run on Windows, Linux and OSX. Networking also uses a layered approach.
+Because my application is written to the .net core layer it will run on Windows, Linux and OSX. 
+
+## Networking also uses a layered approach.
 
 ![TCP/IP Layers](READMEImages/TCPIPLayers.svg "TCP/IP Layers")
 
@@ -159,7 +161,7 @@ TCP/IP started as a military project with 3 goals:
 
 The network layer realizes these goals by routing packets individually, potentially around smoking holes. The French had little gourmet packets in their ATM networks while even packets are bigger in Texas. The network layer can fragment packets to work with different systems. Finally the network layer is responsible for addressing nodes for communication. With the new IPV6 network layer 128 bit addresses we can have 340 trillion, trillion trillion addresses. Even with IPV4 networks 32 bit addresses we can have 4.3 billion nodes. 
 
-![5.5 billion cellphones](READMEImages/IPV4AddressSpace.png "5.5 billion cellphones")
+[![5.5 billion cellphones](READMEImages/IPV4AddressSpace.png "5.5 billion cellphones")](https://www.youtube.com/watch?v=-Uwjt32NvVA)
 
 With name address translation (NAT) we have been able to make many more private IP addresses be behind many fewer public IP addresses so that our hit applications can run on the worlds 5.5 billion cellphones.
 
@@ -214,7 +216,9 @@ You did type all of this information for assignment 2.
 
 Clicking `Obtain IP Address Automatically` meant that we used DHCP. If that is off all of the information on this screen must be entered by hand. Too cumbersome and prone to error for a coffee shop.
 
-Your computer has 3 other names in addition to it's IP Addresses. The names are used by the various layers to find the computer.
+## Your computer has 3 other names 
+
+... in addition to it's IP Addresses. The names are used by the various layers to find the computer.
 
 ![computer has 4 names 1 per layer](READMEImages/TCPIPNames.svg "computer has 4 names 1 per layer")
 
@@ -266,7 +270,7 @@ The connections above belong to the process chrome.exe on the 172.31.22.14 side.
 
 An IP address uniquely identifies a host on the internet. It is a 32 bit quantity for IPV4 and a 128 bit quantity for IPV6. As I mentioned when discussing the network layer there are only ~4 billion 32 bit quantities and ~5.5 billion cellular devices. We would have run out of IP addresses except for name address translation (NAT) which maps up to ~4000 private ip addresses to a single public IPV4 address. 
 
-![5.5 billion cellphones](READMEImages/IPV4AddressSpace.png "5.5 billion cellphones")
+[![5.5 billion cellphones](READMEImages/IPV4AddressSpace.png "5.5 billion cellphones")](https://www.youtube.com/watch?v=-Uwjt32NvVA)
 
 With IPV6 128 bit addresses we can have 340 trillion trillion trillion devices, removing the need for name address translation.
 
