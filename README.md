@@ -367,6 +367,9 @@ Trace complete.
 
 We have reached our destination through 24 hops. Each hop is another gateway to another network segment. 
 
+Tracert and ping are based on the Internet Control Message Protocol (ICMP). Both send an echo request packet. Tracert uses the Time To Live (TTL) field in the IP header to generate an error message from each hop on the way. From this we learn what the gateways are.
+
+
 ## Routing Tables
 
 ![IGP and BGP Routers](READMEImages/BGP.png "IGP and BGP Routers")
