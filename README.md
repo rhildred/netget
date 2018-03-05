@@ -415,6 +415,18 @@ The first address in a segment is also reserved to identify the network. I like 
 
 In this case I need 7 subnets. The next bigger power of 2 is 2^3 == 8 so I need 3 bits. My default number of network bits for 199.1.6.0 is /24 as 199 > 192. My CIDR block is then /27. The 27th bit has a value of 32 so each network sandwich will have 32 possible values. 30 usable hosts sandwiched in between the network and broadcast addresses.
 
+## Vlans
+
+![vlan lets a segment span switches](READMEImages/Vlan-fig2.gif "vlan lets a segment span switches")
+
+Why?
+
+* Separating groups of users who need special security or network functions
+* Isolating connections with heavy or unpredictable traffic patterns
+* Identifying groups of devices whose data should be given priority handling
+* Containing groups of devices that rely on legacy protocols incompatible with the majority of the network’s traffic
+* Separating a very large network into smaller, more manageable subnets
+
 ## Midterm
 
 * 90 questions
