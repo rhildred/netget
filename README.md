@@ -380,3 +380,43 @@ All routers have routing tables made of networks and the gateways to reach them.
 OSPF (Open Shortest Path First) and Border Gateway Protocol(BGP) are two examples of routing protocols that support multiple types of services. OSPF can be used on an interior or border router and BGP can be used on a border or an exterior router. 
 
 Convergence is the state of having a complete routing table with only 1 route to each network. Ideally routers converge quickly to a new routing table when a node stops routing.
+
+## Subnetting
+
+Hopefully you remember that IPV4 and IPV6 addresses are split in 2 parts. The left part is the network portion. The right part is the host portion. An IPV6 has 128 bits. The left most significant 64 bits are network. The right least significant bits are host.
+
+IPV4 only has 32 bits. To conserve bits we have a variable number of host bits. A network with more network bits can have fewer hosts. You may ask "Why does this matter?" That would be a fair question. For our people the main reason that we care about different networks is security. We need to use the network as one of our tools to keep hackers away from our application data.
+
+![firewall rules for my web server](READMEImages/firewallRules.png "firewall rules for my web server")
+
+Subnetting uses powers of 2 to break a network into pieces. There are 3 reasons that you might want to do this:
+
+1. Security. Probably the only reason for our people
+1. Performance. Network services like DHCP and ARP broadcast to an entire LAN/segment. Making the broadcast domain smaller improves performance.
+1. Troubleshooting.
+
+![Powers of 2](READMEImages/binary.png "Powers of 2")
+
+Hopefully you remember a IPV4 Classless Inter-Domain Routing address block consists of an IP address followed by a /and the number of significant network bits between 0 and 32. My IPV4 IP as I write this is `192.168.0.10/24`. When public IP addresses were first given out by the Internet Assigned Numbers Authority (IANA) the first 3 most significant bits were reserved for the intended class of use of the IP address.
+
+1. If the first bit was 0 the class of use for the address was A. This was intended for carriers like Bell. The default number of network bits for a class A address was 8. Because the first bit is 0 class A addresses must be less than 128 in the first octet or byte. The IANA set aside class A addresses that start with 10 as private IP addresses not routable on the internet. Cellphone Carriers and larger institutions often use the private 10.0.0.0/8 behind a NAT. 
+1. If the first bit was 1 and the 2nd bit 0 the class of use for the IP address was B. This was intended for Universities and Colleges. Conestoga's class B address was 142.156.0.0/16. Because the first bit is 1 class B addresses must be >= 128. Because the 2nd bit is 0 class B addresses must be less than 192.
+1. If the first 2 bits were 11 the class of use for the IP address was class C. Class C was intended for commercial use. Class C addresses must be >= 192. The IANA set aside 192.168.0.0/24 to 192.168.255.0/24 as private networks. Home routers often use 192.168.0.0/24 or 192.168.1.0/24 private networks behind a NAT. My home private network is `192.168.0.0/24`.
+
+When we design a subnet we draw a picture that looks like this on a scrap piece of paper.
+
+![design subnets](READMEImages/TCPIPTest4.png "design subnets")
+
+Hopefully you remember from the previous slide that ARP and DHCP use broadcasting. The last address in each segment with all of the host bits set is reserved for nodes to broadcast to all of the other nodes on a subnet/LAN segment.
+
+The first address in a segment is also reserved to identify the network. I like to use the sandwich metaphor to say that the usable IP addresses are sandwiched in between.
+
+![A network Sandwich](READMEImages/NetworkSandwich.svg "A network Sandwich")
+
+In this case I need 7 subnets. The next bigger power of 2 is 2^3 == 8 so I need 3 bits. My default number of network bits for 199.1.6.0 is /24 as 199 > 192. My CIDR block is then /27. The 27th bit has a value of 32 so each network sandwich will have 32 possible values. 30 usable hosts sandwiched in between the network and broadcast addresses.
+
+## Midterm
+
+* 90 questions
+* True/False, Multiple choice, Fill in the blank and Short Answer.
+* 90 minutes
