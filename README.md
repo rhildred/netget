@@ -157,7 +157,7 @@ Under the covers the socket is created with TCP.
 
 ![3 - way handshake to open the socket](READMEImages/TCPStarting.png "3 - way handshake to open the socket")
 
-Before we see the `GET / HTTP/1.0` we see 3 packets. 
+Before we see the `GET / HTTP/1.0` we see 3 packets. This is the famous 3 way handshake between the client and the server.
 
 1. The first is the client sending a packet with the flag SYN set to the server. 
 1. The 2nd is the server sending back a packet with the SYN and ACK flags set. At this point the socket is open on the server side.
