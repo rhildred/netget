@@ -77,7 +77,7 @@ Have you seen a picture that looks like this before?
 
 ![dotnet layers](READMEImages/dotnetlayers.png "dotnet layers")
 
-Because my application is written to the .net core layer it will run on Windows, Linux and OSX. 
+Because my application is written to the .net core layer it will run on Windows, Linux and OSX. The big breakthrough with .net core is that it opens C# programming to Linux in a new way. Linux is a network operating system (NOS) just like windows server. A network operating system runs services on behalf of many users. A network operating system usually has more memory and processing power than a client operating system like Android, IOS, Macos or Windows 10. Enterprises like Linux as a network operating system because it scales better than Windows in many ways. This matters to our (programming) people because with .net core enterprises can write C# code that scales as well as Java code.  
 
 ## Networking also uses a layered approach.
 
@@ -150,6 +150,36 @@ Then the WebClient opens a socket to `151.101.125.147:80`.
 ![socket in a telephone exchange](READMEImages/TexasRichardson_telephoneExchangeOperator.jpg "socket in a telephone exchange")
 
 The word socket predates networking. We plug something in to a socket to complete a circuit. The transport layer creates a circuit between 2 applications. In this case our WebClient app and the web server at http://rhildred.github.io.
+
+#### TCP
+
+Under the covers the socket is created with TCP.
+
+![3 - way handshake to open the socket](READMEImages/TCPStarting.png "3 - way handshake to open the socket")
+
+Before we see the `GET / HTTP/1.0` we see 3 packets. 
+
+1. The first is the client sending a packet with the flag SYN set to the server. 
+1. The 2nd is the server sending back a packet with the SYN and ACK flags set. At this point the socket is open on the server side.
+1. The 3rd is the client sending a packet with the ACK flag set to say that the socket is open on the client side
+
+There used to be an exploit called the SYN flood denial of service attack where rogue clients would send SYNs until all of the server's socket resources were used up. How do you think servers protect against this exploit?
+
+#### Closing the socket
+
+![4 - way handshake to close the socket](READMEImages/TCPEnding.png "4 - way handshake to close the socket")
+
+The server sends back a http response containing the html for my web page. The html is too big to fit in one packet so it needs to be reassembled by TCP from 27 segments. Then the machines both agree to close the socket.
+
+#### UDP
+
+![udp format](READMEImages/Fig3_udp_userdatagrams.jpg "udp format")
+
+Say you have data that is less than 1 packet in size (~1024 bytes). Say that data is time sensitive and that you would rather not have the overhead of reliable delivery. UDP is a thin layer on top of IP datagrams to send time sensitive data like live voice or video or video game controller information.
+
+UDP adds ports so that the datagram can be received by the correct application. It adds length and a checksum so that the receiving application can recalculate the checksum and make sure that the data isn't misshapen as Metcalfe said in the 40th anniversary of ethernet video. That's it.
+
+We use TCP for reliable transmission like streaming from YouTube. We use UDP for speed in live situations.
 
 ### Network Layer
 
@@ -343,8 +373,10 @@ We have reached our destination through 24 hops. Each hop is another gateway to 
 
 All routers have routing tables made of networks and the gateways to reach them. Different routers create those routing tables in different ways. There are 3 basic ways:
 
-1. link state like Open Shortest Path First (OSPF) and 
-2. distance vector like Routing Information Protocol (RIPV2) 
-3. Path state used by a Border Gateway Protocol (BGP) router that is manually configured by a network administrator to make core routing decisions. 
+1. Link state like Open Shortest Path First (OSPF) which discovers neighbors by the state of links to them.  
+2. Distance vector like Routing Information Protocol (RIPV2) which shares information about the number of hops and other metrics.
+3. Path state used by a Border Gateway Protocol (BGP) router that is manually configured by a network administrator to make core routing decisions. Border gateway protocol is an exterior gateway protocol that links autonomous systems. 
+
+OSPF (Open Shortest Path First) and Border Gateway Protocol(BGP) are two examples of routing protocols that support multiple types of services. OSPF can be used on an interior or border router and BGP can be used on a border or an exterior router. 
 
 Convergence is the state of having a complete routing table with only 1 route to each network. Ideally routers converge quickly to a new routing table when a node stops routing.
