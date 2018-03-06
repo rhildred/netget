@@ -127,7 +127,7 @@ We call a method on that object:
 
 wait for and print the result. 
 
-Under the covers the HttpClient uses another application service DNS to get the IP address of that rhildred.github.io server.
+Under the covers the HttpClient uses another application service Domain Name Services (DNS) to get the IP address of that rhildred.github.io server.
 
 ```
 
@@ -143,7 +143,15 @@ Address: 151.101.125.147
 
 ```
 
+DNS is a client server application like a web server. Instead of a request and response Protocol Data Unit as we had with http we have a Query and Answer PDU.
+
 Then the WebClient opens a socket to `151.101.125.147:80`.
+
+### Websocket
+
+![websocket](https://rhildred.github.io/netget/READMEImages/WebSockets-Diagram.png "websocket")
+
+When I did the socket example, I was reaching too far back in history. Application programmers like us can use web sockets at the application layer and send message PDUs back and forth.
 
 ### Transport Layer
 
@@ -224,6 +232,10 @@ The session layer was put in between the application and the transport layer. Se
 ### Presentation Layer
 
 The presentation layer was important in the 80s when file servers and print servers were the killer applications for Networking. The presentation layer can be thought of as what makes our g: drives appear as a local drive on every computer that we log on to at school.
+
+## Using layers to divide and conquer for Troubleshooting
+
+![Using layers to divide and conquer for Troubleshooting]( "Using layers to divide and conquer for Troubleshooting")
 
 ## How Do Computers Find Each Other on Networks
 
