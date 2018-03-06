@@ -16,11 +16,11 @@ In vscode I:
 1. Opened the resulting Program.cs and pressed `Ctrl-F5`.
 1. Clicked `yes` on the following dialog.
 
-![click yes](READMEImages/RequiredAssets.png "click yes")
+![click yes](https://rhildred.github.io/netget/READMEImages/RequiredAssets.png "click yes")
 
 The next time I pressed `Ctrl-F5` I was treated to:
 
-![hello world!](READMEImages/HelloWorld.png "hello world!")
+![hello world!](https://rhildred.github.io/netget/READMEImages/HelloWorld.png "hello world!")
 
 Then I replaced all of the code in Program.cs with this, my first networking code!!!!!:
 
@@ -59,15 +59,15 @@ namespace helloC_
 
 Then when I pressed `Ctrl-F5` I was treated to this:
 
-![usage .... netget <url>](READMEImages/usage.png "usage .... netget <url>")
+![usage .... netget <url>](https://rhildred.github.io/netget/READMEImages/usage.png "usage .... netget <url>")
 
 Almost there! To get `args[0]` populated I had to change the debug config in `.vscode/launch.json` to add to the `args[]`.
 
-![added http://rhildred.github.io](READMEImages/launch.json.png "added http://rhildred.github.io")
+![added http://rhildred.github.io](https://rhildred.github.io/netget/READMEImages/launch.json.png "added http://rhildred.github.io")
 
 Finally when I pressed `Ctrl-F5` I was treated with:
 
-![the end of the html for my home page](READMEImages/HtmlSuccess.png "the end of the html for my home page")
+![the end of the html for my home page](https://rhildred.github.io/netget/READMEImages/HtmlSuccess.png "the end of the html for my home page")
 
 Whoa! What just happened here? Well it turned out that a lot had to go right for this to work. All of that is the true thrust of this networking course.
 
@@ -75,13 +75,13 @@ Whoa! What just happened here? Well it turned out that a lot had to go right for
 
 Have you seen a picture that looks like this before?
 
-![dotnet layers](READMEImages/dotnetlayers.png "dotnet layers")
+![dotnet layers](https://rhildred.github.io/netget/READMEImages/dotnetlayers.png "dotnet layers")
 
 Because my application is written to the .net core layer it will run on Windows, Linux and OSX. The big breakthrough with .net core is that it opens C# programming to Linux in a new way. Linux is a network operating system (NOS) just like windows server. A network operating system runs services on behalf of many users. A network operating system usually has more memory and processing power than a client operating system like Android, IOS, Macos or Windows 10. Enterprises like Linux as a network operating system because it scales better than Windows in many ways. This matters to our (programming) people because with .net core enterprises can write C# code that scales as well as Java code.  
 
 ## Networking also uses a layered approach.
 
-![TCP/IP Layers](READMEImages/TCPIPLayers.svg "TCP/IP Layers")
+![TCP/IP Layers](https://rhildred.github.io/netget/READMEImages/TCPIPLayers.svg "TCP/IP Layers")
 
 The line of code:
 
@@ -99,7 +99,7 @@ If you haven't learned this already encapsulation in object oriented programming
 
 Encapsulation in networking is similar. As we go through the layers we add header code to the data from the layer above. The header code is used to do the right thing to send the data to the next layer below. The header code has addressing and state information in it for each layer.
 
-![the first iphone](READMEImages/original-iphone-first-gen-review-1-800x533-c.png "the first iphone")
+![the first iphone](https://rhildred.github.io/netget/READMEImages/original-iphone-first-gen-review-1-800x533-c.png "the first iphone")
 
 Part of the big leap forward with this device is that as well as SMS and digital calls it also used plain IP over the cellular network. The IP layer was then able to support a regular Safari like WebKit browsing experience and the smart phone really took off.
 
@@ -147,7 +147,7 @@ Then the WebClient opens a socket to `151.101.125.147:80`.
 
 ### Transport Layer
 
-![socket in a telephone exchange](READMEImages/TexasRichardson_telephoneExchangeOperator.jpg "socket in a telephone exchange")
+![socket in a telephone exchange](https://rhildred.github.io/netget/READMEImages/TexasRichardson_telephoneExchangeOperator.jpg "socket in a telephone exchange")
 
 The word socket predates networking. We plug something in to a socket to complete a circuit. The transport layer creates a circuit between 2 applications. In this case our WebClient app and the web server at http://rhildred.github.io.
 
@@ -155,7 +155,7 @@ The word socket predates networking. We plug something in to a socket to complet
 
 Under the covers the socket is created with TCP.
 
-![3 - way handshake to open the socket](READMEImages/TCPStarting.png "3 - way handshake to open the socket")
+![3 - way handshake to open the socket](https://rhildred.github.io/netget/READMEImages/TCPStarting.png "3 - way handshake to open the socket")
 
 Before we see the `GET / HTTP/1.0` we see 3 packets. This is the famous 3 way handshake between the client and the server.
 
@@ -167,13 +167,13 @@ There used to be an exploit called the SYN flood denial of service attack where 
 
 #### Closing the socket
 
-![4 - way handshake to close the socket](READMEImages/TCPEnding.png "4 - way handshake to close the socket")
+![4 - way handshake to close the socket](https://rhildred.github.io/netget/READMEImages/TCPEnding.png "4 - way handshake to close the socket")
 
 The server sends back a http response containing the html for my web page. The html is too big to fit in one packet so it needs to be reassembled by TCP from 27 segments. Then the machines both agree to close the socket.
 
 #### UDP
 
-![udp format](READMEImages/Fig3_udp_userdatagrams.jpg "udp format")
+![udp format](https://rhildred.github.io/netget/READMEImages/Fig3_udp_userdatagrams.jpg "udp format")
 
 Say you have data that is less than 1 packet in size (~1024 bytes). Say that data is time sensitive and that you would rather not have the overhead of reliable delivery. UDP is a thin layer on top of IP datagrams to send time sensitive data like live voice or video or video game controller information.
 
@@ -191,15 +191,15 @@ TCP/IP started as a military project with 3 goals:
 
 The network layer realizes these goals by routing packets individually, potentially around smoking holes. The French had little gourmet packets in their ATM networks while even packets are bigger in Texas. The network layer can fragment packets to work with different systems. Finally the network layer is responsible for addressing nodes for communication. With the new IPV6 network layer 128 bit addresses we can have 340 trillion, trillion trillion addresses. Even with IPV4 networks 32 bit addresses we can have 4.3 billion nodes. 
 
-[![5.5 billion cellphones](READMEImages/IPV4AddressSpace.png "5.5 billion cellphones")](https://www.youtube.com/watch?v=-Uwjt32NvVA)
+[![5.5 billion cellphones](https://rhildred.github.io/netget/READMEImages/IPV4AddressSpace.png "5.5 billion cellphones")](https://www.youtube.com/watch?v=-Uwjt32NvVA)
 
 With name address translation (NAT) we have been able to make many more private IP addresses be behind many fewer public IP addresses so that our hit applications can run on the worlds 5.5 billion cellphones.
 
 ### Link Layer
 
-![signal transmission](READMEImages/tin-cans.jpg "signal transmission")
+![signal transmission](https://rhildred.github.io/netget/READMEImages/tin-cans.jpg "signal transmission")
 
-The link layer is responsible for the physical transmission of the signal. Link layer mediums in common use are twisted pair cables, coaxial cables, fiber and the radio spectrum. Like our tin can telphone example where the medium is a taut string some media can only send one signal at a time. Senders and receivers must take turns. The link layer mediates turn taking in what we call a half duplex mode. Other media like twisted pair has one pair of wires for transmission and 1 pair for receiving. In this full duplex case the sender and receiver can work simultaneously. There is also a mode of using mostly radio spectrum called simplex. This is the case that we are used to from car radios and network television.
+The link layer is responsible for the physical transmission of the signal. Link layer mediums in common use are twisted pair cables, coaxial cables, fiber and the radio spectrum. Fiber is superior to twisted pair because it is imune to electromagnetic interference. Like our tin can telphone example where the medium is a taut string some media can only send one signal at a time. Senders and receivers must take turns. The link layer mediates turn taking in what we call a half duplex mode. Other media like twisted pair has one pair of wires for transmission and 1 pair for receiving. In this full duplex case the sender and receiver can work simultaneously. There is also a mode of using mostly radio spectrum called simplex. This is the case that we are used to from car radios and network television.
 
 ## OSI Model
 
@@ -209,7 +209,7 @@ TCP/IP was developed as a defence project in the 1960s to:
 * Permit different computer systems from different Nato allies to communicate easily
 * Interconnect systems even into space
 
-![OSI model adds 3 theoretical layers](READMEImages/OSITCPIPLayers.png "OSI model adds 3 theoretical layers")
+![OSI model adds 3 theoretical layers](https://rhildred.github.io/netget/READMEImages/OSITCPIPLayers.png "OSI model adds 3 theoretical layers")
 
 The OSI model was developed later as a theoretical model. One can think of the OSI model as adding 3 layers to TCP/IP. 
 
@@ -245,7 +245,7 @@ It may be hard to think of something that would be blocking a web site at the Li
 
 To be able to find another computer on a network a computer first needs an address of it own on the local area network segment that it is part of. If you have noticed this on your screen when you are connecting to wifi at Tim's:
 
-![obtaining ip address](READMEImages/ObtainingIP.png "obtaining ip address") 
+![obtaining ip address](https://rhildred.github.io/netget/READMEImages/ObtainingIP.png "obtaining ip address") 
 
 you have been a witness to your computer getting an address from Dynamic Host Configuration Protocol (DHCP).
 
@@ -258,7 +258,7 @@ Before DHCP existed to get an ipaddress at Tim's you would need to type:
 
 You did type all of this information for assignment 2.
 
-![instead of dhcp](READMEImages/ManualIPAddress.png "instead of dhcp")
+![instead of dhcp](https://rhildred.github.io/netget/READMEImages/ManualIPAddress.png "instead of dhcp")
 
 Clicking `Obtain IP Address Automatically` meant that we used DHCP. If that is off all of the information on this screen must be entered by hand. Too cumbersome and prone to error for a coffee shop.
 
@@ -266,13 +266,13 @@ Clicking `Obtain IP Address Automatically` meant that we used DHCP. If that is o
 
 ... in addition to it's IP Addresses. The names are used by the various layers to find the computer.
 
-![computer has 4 names 1 per layer](READMEImages/TCPIPNames.svg "computer has 4 names 1 per layer")
+![computer has 4 names 1 per layer](https://rhildred.github.io/netget/READMEImages/TCPIPNames.svg "computer has 4 names 1 per layer")
 
 ## hostname
 
 The hostname is for the carbon units. I like to name my hosts according to Tolkien places. As I alluded to when I mentioned the application layer hostnames are managed on the internet by a distributed database. This database is called the Domain Name Service (DNS). Names on the internet are sold by companies like enom.com and GoDaddy. A short domain name that has an english word in it can be over $1000. People buy domain names and speculate that they will be worth more when someone has an idea that matches the name. A domain name like ysaas.ca has a node in the distributed database called a zone. This is the zone for ysaas.ca:
 
-![ysaas.ca dns zone](READMEImages/zone.png "ysaas.ca dns zone")
+![ysaas.ca dns zone](https://rhildred.github.io/netget/READMEImages/zone.png "ysaas.ca dns zone")
 
 Each line in the zone is a record/row in the database. There are 3 different types of row in common use:
 
@@ -316,7 +316,7 @@ The connections above belong to the process chrome.exe on the 172.31.22.14 side.
 
 An IP address uniquely identifies a host on the internet. It is a 32 bit quantity for IPV4 and a 128 bit quantity for IPV6. As I mentioned when discussing the network layer there are only ~4 billion 32 bit quantities and ~5.5 billion cellular devices. We would have run out of IP addresses except for name address translation (NAT) which maps up to ~4000 private ip addresses to a single public IPV4 address. 
 
-[![5.5 billion cellphones](READMEImages/IPV4AddressSpace.png "5.5 billion cellphones")](https://www.youtube.com/watch?v=-Uwjt32NvVA)
+[![5.5 billion cellphones](https://rhildred.github.io/netget/READMEImages/IPV4AddressSpace.png "5.5 billion cellphones")](https://www.youtube.com/watch?v=-Uwjt32NvVA)
 
 With IPV6 128 bit addresses we can have 340 trillion trillion trillion devices, removing the need for name address translation.
 
@@ -383,9 +383,12 @@ Trace complete.
 
 We have reached our destination through 24 hops. Each hop is another gateway to another network segment. 
 
+Tracert and ping are based on the Internet Control Message Protocol (ICMP). Both send an echo request packet. Tracert uses the Time To Live (TTL) field in the IP header to generate an error message from each hop on the way. From this we learn what the gateways are.
+
+
 ## Routing Tables
 
-![IGP and BGP Routers](READMEImages/BGP.png "IGP and BGP Routers")
+![IGP and BGP Routers](https://rhildred.github.io/netget/READMEImages/BGP.png "IGP and BGP Routers")
 
 All routers have routing tables made of networks and the gateways to reach them. Different routers create those routing tables in different ways. There are 3 basic ways:
 
@@ -403,7 +406,7 @@ Hopefully you remember that IPV4 and IPV6 addresses are split in 2 parts. The le
 
 IPV4 only has 32 bits. To conserve bits we have a variable number of host bits. A network with more network bits can have fewer hosts. You may ask "Why does this matter?" That would be a fair question. For our people the main reason that we care about different networks is security. We need to use the network as one of our tools to keep hackers away from our application data.
 
-![firewall rules for my web server](READMEImages/firewallRules.png "firewall rules for my web server")
+![firewall rules for my web server](https://rhildred.github.io/netget/READMEImages/firewallRules.png "firewall rules for my web server")
 
 Subnetting uses powers of 2 to break a network into pieces. There are 3 reasons that you might want to do this:
 
@@ -411,7 +414,7 @@ Subnetting uses powers of 2 to break a network into pieces. There are 3 reasons 
 1. Performance. Network services like DHCP and ARP broadcast to an entire LAN/segment. Making the broadcast domain smaller improves performance.
 1. Troubleshooting.
 
-![Powers of 2](READMEImages/binary.png "Powers of 2")
+![Powers of 2](https://rhildred.github.io/netget/READMEImages/binary.png "Powers of 2")
 
 Hopefully you remember a IPV4 Classless Inter-Domain Routing address block consists of an IP address followed by a /and the number of significant network bits between 0 and 32. My IPV4 IP as I write this is `192.168.0.10/24`. When public IP addresses were first given out by the Internet Assigned Numbers Authority (IANA) the first 3 most significant bits were reserved for the intended class of use of the IP address.
 
@@ -421,19 +424,19 @@ Hopefully you remember a IPV4 Classless Inter-Domain Routing address block consi
 
 When we design a subnet we draw a picture that looks like this on a scrap piece of paper.
 
-![design subnets](READMEImages/TCPIPTest4.png "design subnets")
+![design subnets](https://rhildred.github.io/netget/READMEImages/TCPIPTest4.png "design subnets")
 
 Hopefully you remember from the previous slide that ARP and DHCP use broadcasting. The last address in each segment with all of the host bits set is reserved for nodes to broadcast to all of the other nodes on a subnet/LAN segment.
 
 The first address in a segment is also reserved to identify the network. I like to use the sandwich metaphor to say that the usable IP addresses are sandwiched in between.
 
-![A network Sandwich](READMEImages/NetworkSandwich.svg "A network Sandwich")
+![A network Sandwich](https://rhildred.github.io/netget/READMEImages/NetworkSandwich.svg "A network Sandwich")
 
 In this case I need 7 subnets. The next bigger power of 2 is 2^3 == 8 so I need 3 bits. My default number of network bits for 199.1.6.0 is /24 as 199 > 192. My CIDR block is then /27. The 27th bit has a value of 32 so each network sandwich will have 32 possible values. 30 usable hosts sandwiched in between the network and broadcast addresses.
 
 ## Vlans
 
-![vlan lets a segment span switches](READMEImages/Vlan-fig2.gif "vlan lets a segment span switches")
+![vlan lets a segment span switches](https://rhildred.github.io/netget/READMEImages/Vlan-fig2.gif "vlan lets a segment span switches")
 
 Why?
 
