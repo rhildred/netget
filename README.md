@@ -1,4 +1,4 @@
-# [.netget](https://github.com/rhildred/netget)
+# <a href="https://github.com/rhildred/netget" target="_blank">netget</a>
 ## gets a url using .net core
 
 This is a project for my 2nd term INFO1380 networking class. More about networking then about .net core. This class has had a 1 semester introduction to programming in .net. I am developing this on OSX/macos during reading week. OSX because I have OSX from when a friend and I started a software company in the Waterloo Ontario Accelerator Center. All of the cool software startups ran OSX!
