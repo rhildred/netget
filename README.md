@@ -1,4 +1,4 @@
-# [.netget](https://github.com/rhildred/netget)
+# <a href="https://github.com/rhildred/netget" target="_blank">netget</a>
 ## gets a url using .net core
 
 This is a project for my 2nd term INFO1380 networking class. More about networking then about .net core. This class has had a 1 semester introduction to programming in .net. I am developing this on OSX/macos during reading week. OSX because I have OSX from when a friend and I started a software company in the Waterloo Ontario Accelerator Center. All of the cool software startups ran OSX!
@@ -233,9 +233,21 @@ The session layer was put in between the application and the transport layer. Se
 
 The presentation layer was important in the 80s when file servers and print servers were the killer applications for Networking. The presentation layer can be thought of as what makes our g: drives appear as a local drive on every computer that we log on to at school.
 
-## Using layers to divide and conquer for Troubleshooting
+## Using the Layers to Inform Problem Solving
 
-![Using layers to divide and conquer for Troubleshooting]( "Using layers to divide and conquer for Troubleshooting")
+![what could be wrong?](https://rhildred.github.io/netget/READMEImages/Scientific_Method.jpg "what could be wrong?")
+
+During the break a student asked me about getting blocked on a web site. Just like the networking layers help to divide and conquer for network implementations they can also help to split up the problem space in troubleshooting.
+
+What could it be at the application layer? How would you test?
+
+Transport Layer?
+
+Network Layer?
+
+Link Layer?
+
+It may be hard to think of something that would be blocking a web site at the Link Layer. Let's talk about a problem that I had one Thanksgiving. I got paged saying that they couldn't ping a computer. Thinking it was a basic connectivity problem of some kind. I asked if they could ping any other computers. They could. I asked them to walk up to the computer they couldn't ping and read to me what was on the screen thinking that there might be some local error message. What do you think was on the screen?
 
 ## How Do Computers Find Each Other on Networks
 
