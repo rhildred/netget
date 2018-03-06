@@ -225,6 +225,22 @@ The session layer was put in between the application and the transport layer. Se
 
 The presentation layer was important in the 80s when file servers and print servers were the killer applications for Networking. The presentation layer can be thought of as what makes our g: drives appear as a local drive on every computer that we log on to at school.
 
+## Using the Layers to Inform Problem Solving
+
+![what could be wrong?](READMEImages/File_Scientific_Method.jpg "what could be wrong?")
+
+During the break a student asked me about getting blocked on a web site. Just like the networking layers help to divide and conquer for network implementations they can also help to split up the problem space in troubleshooting.
+
+What could it be at the application layer? How would you test?
+
+Transport Layer?
+
+Network Layer?
+
+Link Layer?
+
+It may be hard to think of something that would be blocking a web site at the Link Layer. Let's talk about a problem that I had one Thanksgiving. I got paged saying that they couldn't ping a computer. Thinking it was a basic connectivity problem of some kind. I asked if they could ping any other computers. They could. I asked them to walk up to the computer they couldn't ping and read to me what was on the screen thinking that there might be some local error message. What do you think was on the screen?
+
 ## How Do Computers Find Each Other on Networks
 
 To be able to find another computer on a network a computer first needs an address of it own on the local area network segment that it is part of. If you have noticed this on your screen when you are connecting to wifi at Tim's:
