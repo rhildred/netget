@@ -227,7 +227,7 @@ The presentation layer was important in the 80s when file servers and print serv
 
 ## Using the Layers to Inform Problem Solving
 
-![what could be wrong?](READMEImages/Scientific_Method.jpg "what could be wrong?")
+![what could be wrong?](https://rhildred.github.io/netget/READMEImages/Scientific_Method.jpg "what could be wrong?")
 
 During the break a student asked me about getting blocked on a web site. Just like the networking layers help to divide and conquer for network implementations they can also help to split up the problem space in troubleshooting.
 
