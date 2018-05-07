@@ -18,9 +18,11 @@ I feel like finger pointing is kind of "new age" troubleshooting. Sort of like j
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XJb-gjhcdhg?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen title="facebook devops"></iframe>
 
-Their culture is also organized around teams working this way.
+Facebook's culture is also organized around teams working this way.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Fs15kLpqveY?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen title="culture"></iframe>
+
+Some local companies are also emulating the devops culture. Brightspace/D2L, EA, and Blackberry to name a few.
 
 
 # <a href="https://github.com/rhildred/netget" target="_blank">netget</a>
